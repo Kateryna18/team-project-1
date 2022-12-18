@@ -251,6 +251,8 @@ left: 408;
     bottom: 0;
     left: 652;
   }
+  transform: translateX(-50%, -50%);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__image{
   position: absolute;
@@ -263,5 +265,7 @@ left: 408;
     bottom: 12;
     left: 32;
   }
+  transform: translateX(-50%, -50%);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

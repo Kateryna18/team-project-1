@@ -93,8 +93,8 @@ body {
 
   & .section-title {
     font-family: 'Seymour One', sans-serif;
-    // font-style: normal;
-    // font-weight: 400;
+    font-style: normal;
+    font-weight: 400;
     font-size: 30px;
     line-height: calc(38 / 30);
     text-align: center;
@@ -336,7 +336,7 @@ body {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
-//Налаштування backdrop
+// //Налаштування backdrop
 .backdrop {
   @extend %fixed00-100;
   overflow-y: scroll; /*щоб не скролився контент під ним*/
@@ -349,7 +349,7 @@ body {
     }
   }
 }
-//Налаштування модалки
+// //Налаштування модалки
 .modal {
   // @include centeredAbsolute($x__abs: right);
   position: absolute;
@@ -366,7 +366,7 @@ body {
   transition: var(--transform--) 1s var(--cubic--),
     var(--transform--) 1s var(--cubic--);
 }
-/* кнопка закриття в модальному вікні */
+// /* кнопка закриття в модальному вікні */
 .button-close {
   position: absolute;
   top: 12px;
@@ -390,7 +390,7 @@ body {
   }
   /* хрестик,коло stroke :/*var(--button-bg-color--);  */
 }
-//Верхня частина modal заголовок і картинка
+// //Верхня частина modal заголовок і картинка
 .products {
   &__modal-title {
     display: flex;

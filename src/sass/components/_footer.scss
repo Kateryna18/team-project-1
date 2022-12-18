@@ -1,19 +1,19 @@
 .footer {
-    // background-image: linear-gradient(to top,var(--primary-color) 20%, rgba(47, 48, 58, 0) 80%),
-    //         url(../images/backgroud_desktop@1x.jpg);
+    background-image: linear-gradient(to top,var(--primary-color) 20%, rgba(47, 48, 58, 0) 80%),
+            url(../images/backgroud_desktop@1x.jpg);
 
 
-    // background-image:  linear-gradient(rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 1px, #84a178 50px, #84a178 100%);
+    background-image:  linear-gradient(rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 1px, #84a178 50px, #84a178 100%);
     background-color: $primary-color;
 }
 
 .footer__container {
     display: flex;
     justify-content: space-between;
-        // align-items: center;
+        align-items: center;
         flex-direction: column;
-        // margin-left: auto;
-        // margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
 
     @media screen and (min-width: 768px) {
     flex-direction: unset;
@@ -88,8 +88,8 @@
 }
 
 .footer__info {
-    // display: flex;
-    // margin-left: auto;
+    display: flex;
+    margin-left: auto;
     margin-bottom: 60px;
 }
 
@@ -136,11 +136,11 @@
 }
 
 
-// .footer__contacts {
-//     display: flex;
-//     justify-content: end;
+.footer__contacts {
+    display: flex;
+    justify-content: end;
 
-// }
+}
 
 .footer__contacts {
     display: flex;
@@ -148,7 +148,7 @@
     
     font-weight: 700;
     line-height: 186%;
-    // color: black;
+    color: black;
    
 
 
