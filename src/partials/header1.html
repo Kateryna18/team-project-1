@@ -1,0 +1,176 @@
+<div class="header__container">
+  <nav class="header__nav">
+    <a href="./index.html">
+      <img src="./images/header/logo.png" alt="logo company"
+    /></a>
+    <ul class="header__list">
+      <li class="header-nav__item">
+        <a class="header-nav__link" href="./index.html">Home</a>
+      </li>
+      <li class="header-nav__item">
+        <a class="header-nav__link" href="#about">How it’s made?</a>
+      </li>
+      <li class="header-nav__item">
+        <a class="header-nav__link" href="#products">Our products</a>
+      </li>
+      <li class="header-nav__item">
+        <a class="header-nav__link" href="#contacts">Contact</a>
+      </li>
+    </ul>
+    <div class="buttons-conteiner">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="32" height="32" aria-label="mobile menu switcher">
+          <use
+            class="icon-menu"
+            href="./images/icons_sprite.svg#btn_menu"
+          ></use>
+        </svg>
+      </button>
+      <button class="header__btn" type="button" data-modal-open>Buy now</button>
+    </div>
+  </nav>
+</div>
+
+<!-- mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="menu__nav">
+    <a class="mobile_logo" href="./index.html">
+      <img
+        src="./images/header/logo.png"
+        width="48px"
+        height="44px"
+        alt="logo company"
+    /></a>
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu_button-close" width="32" height="32">
+        <use href="./images/icons_sprite.svg#btn_close-white"></use>
+      </svg>
+    </button>
+  </div>
+  <ul class="mobile-menu">
+    <li class="mobile_menu-item">
+      <a href="./index.html" class="mobile_menu__link">Home</a>
+    </li>
+    <li class="mobile_menu-item">
+      <a href="#about" class="mobile_menu__link header__link--current"
+        >How it’s made?</a
+      >
+    </li>
+    <li class="mobile_menu-item">
+      <a href="#products" class="mobile_menu__link">Our products</a>
+    </li>
+    <li class="mobile_menu-item">
+      <a href="#contacts" class="mobile_menu__link">Contacts</a>
+    </li>
+  </ul>
+  <button class="mobile__btn-bye" type="button">Buy now</button>
+</div>
+
+<!-- modal-window -->
+<div class="backdrop1" data-modal>
+  <div class="mobile__modal">
+    <button class="modal__btn--close" type="button" data-modal-close>
+      <svg class="modal__icone--close" width="11px" height="11px">
+        <use href="./images/icons_sprite.svg#btn_close-black"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Buy now</p>
+    <div class="mobile-menu__picture">
+      <ul>
+        <li>
+          <picture class="mobile-menu__products"
+            ><source
+              media="max-width: 767px"
+              srcset="
+                ./images/products/prod1_sm@1x.png 1x,
+                ./images/products/prod1_sm@2x.png 2x
+              " />
+            <img
+              src="./images/products/prod1_lg@1x.png"
+              alt="ice cream"
+              width="132"
+          /></picture>
+        </li>
+        <li>
+          <picture class="mobile-menu__products"
+            ><source
+              media="max-width: 767px"
+              srcset="
+                ./images/products/prod2_sm@1x.png 1x,
+                ./images/products/prod2_sm@2x.png 2x
+              " />
+            <img
+              src="./images/products/prod2_lg@1x.png"
+              alt="ice cream"
+              width="132"
+          /></picture>
+        </li>
+        <li>
+          <picture class="mobile-menu__products"
+            ><source
+              media="max-width: 767px"
+              srcset="
+                ./images/products/prod3_sm@1x.png 1x,
+                ./images/products/prod3_sm@2x.png 2x
+              " />
+            <img
+              src="./images/products/prod3_lg@1x.png"
+              alt="ice cream"
+              width="132"
+          /></picture>
+        </li>
+      </ul>
+    </div>
+
+    <form class="modal-form">
+      <div class="modal-form__field">
+        <label for="name-form" class="modal-form__lable"></label>
+        <div class="modal-form__icon-wrap">
+          <input
+            class="modal-form__input"
+            id="modal-form__name"
+            type="text"
+            name="user_name"
+            required
+            placeholder="Name"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Input 2 words with a space."
+            minlength="7"
+          />
+        </div>
+      </div>
+      <div class="modal-form__field">
+        <label for="telephone-form" class="modal-form__lable"></label>
+        <div class="modal-form__icon-wrap">
+          <input
+            id="telephone-form"
+            class="modal-form__input"
+            type="tel"
+            name="telephone_form"
+            required
+            placeholder="Phone"
+            minlength="12"
+          />
+        </div>
+      </div>
+
+      <div class="modal-form__field modal-form__comment">
+        <label for="comment" class="modal-form__lable"></label>
+        <textarea
+          class="modal-form__textarea modal-form__input"
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+
+      <button class="agreement__btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
