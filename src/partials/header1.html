@@ -19,9 +19,10 @@
     </ul>
     <div class="buttons-conteiner">
       <button
-        class="menu-toggle js-open-menu"
+        class="menu-toggle js-open-modal"
         aria-expanded="false"
         aria-controls="mobile-menu"
+        data-modal="mobile-menu"
       >
         <svg width="32" height="32" aria-label="mobile menu switcher">
           <use
@@ -41,7 +42,7 @@
 </div>
 
 <!-- mobile menu -->
-<div class="menu-container js-menu-container" id="mobile-menu">
+<div class="menu-container js-menu-container" data-modal="mobile-menu">
   <div class="menu__nav">
     <a class="mobile_logo" href="./index.html">
       <img
@@ -50,8 +51,8 @@
         height="44px"
         alt="logo company"
     /></a>
-    <button class="menu-toggle js-close-menu">
-      <svg class="menu_button-close" width="32" height="32">
+    <button class="menu-toggle">
+      <svg class="menu_button-close js-modal-close" width="32" height="32">
         <use href="./images/icons_sprite.svg#btn_close-white"></use>
       </svg>
     </button>
