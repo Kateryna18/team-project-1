@@ -562,39 +562,7 @@ $milkshakes-color: #d6936d;
       margin-bottom: 40px;
     }
   } // &__list
-  &__item {
-    margin: 0 auto;
-    width: 132px;
-    height: 135px;
-    background-color: $second-color;
-    border-radius: 10px;
-    @media screen and (max-width: $max-mobile) {
-      &:not(:last-child) {
-        margin-bottom: 82px;
-      }
-    }
-    &--ice-cream {
-      border: 2px solid #96af8c;
-    }
-    &--ice-coffee {
-      border: 2px solid #efd478;
-    }
-    &--milkshakes {
-      border: 2px solid #efd478;
-    }
-    &--ice-cream:hover,
-    &--ice-cream:focus {
-      background-color: $ice-cream-color;
-    }
-    &--ice-coffee:hover,
-    &--ice-coffee:focus {
-      background-color: $ice-coffee-color;
-    }
-    &--milkshakes:hover,
-    &--milkshakes:focus {
-      background-color: $milkshakes-color;
-    }
-  } //&__item
+  //&__item
   &__title {
     text-align: center;
     font-weight: 700;
@@ -709,4 +677,37 @@ $milkshakes-color: #d6936d;
   line-height: calc(15 / 12);
   color: #131313;
   border: none;
+}
+.buynow__iten {
+  margin: 0 auto;
+  width: 132px;
+  height: 135px;
+  background-color: $second-color;
+  border-radius: 10px;
+  @media screen and (max-width: $max-mobile) {
+    &:not(:last-child) {
+      margin-bottom: 82px;
+    }
+  }
+  &--ice-cream {
+    border: 2px solid #96af8c;
+  }
+  &--ice-coffee {
+    border: 2px solid #efd478;
+  }
+  &--milkshakes {
+    border: 2px solid #d6936d;
+  }
+  &--ice-cream:hover,
+  &--ice-cream:focus {
+    background-color: $ice-cream-color;
+  }
+  &--ice-coffee:hover,
+  &--ice-coffee:focus {
+    background-color: $ice-coffee-color;
+  }
+  &--milkshakes:hover,
+  &--milkshakes:focus {
+    background-color: $milkshakes-color;
+  }
 }
