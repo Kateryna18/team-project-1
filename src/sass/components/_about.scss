@@ -228,7 +228,7 @@
   z-index: 20;
   transition: 0.3s all;
 }
-.modal {
+.about .modal {
   opacity: 0;
   visibility: hidden;
   width: 100%;
@@ -252,7 +252,7 @@
   background-color: $second-color;
 }
 
-.modal.active,
+.about .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
