@@ -77,8 +77,11 @@
         <a href="#contacts" class="mobile_menu__link">Contacts</a>
       </li>
     </ul>
-    <button class="mobile__btn-bye" type="button">
-      Buy now
+    <button
+      class="mobile__btn-bye js-open-modal"
+      data-modal="buynow"
+      type="button">
+          Buy now
       <svg class="icon__arrow-short" width="6" height="10">
         <use href="./images/icons_sprite.svg#arrow-short"></use>
       </svg>
@@ -86,70 +89,38 @@
   </div>
 
   <!-- modal-window -->
-  <div class="backdrop1 modal" data-modal="mobile__byenow__data-modal">
-    <div class="mobile__modal">
+  <div class="backdrop1 modal" ">
+    <div class="mobile__modal" data-modal="buynow">
       <button class="modal__btn--close js-modal-close" type="button">
         <svg class="modal__cross js-modal-close">
           <use href="./images/about/symbol-defs.svg#icon-modal-cross"></use>
         </svg>
       </button>
-      <p class="modal__title">Buy now</p>
-      <div class="mobile-menu__picture">
+      <!-- <p class="modal__title">Buy now</p> -->
+      <!-- <div class="mobile-menu__picture">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <picture class="mobile-menu__img"
-              ><source
-                media="max-width: 767px"
-                srcset="
-                  ./images/products/prod1_sm@1x.png 1x,
-                  ./images/products/prod1_sm@2x.png 2x
-                " />
-              <img
-                src="./images/products/prod1_lg@1x.png"
-                alt="ice cream"
-                width="160"
-            /></picture>
-            <div class="mobile-menu__products mmp-first">
-              <p class="mobile-menu__title-products">ice cream</p>
-            </div>
+            <p class="mobile-menu__title-products">ice cream</p>
+           </li>
+          <li class="mobile-menu__item">
+            <p class="mobile-menu__title-products">ice coffee</p>
           </li>
           <li class="mobile-menu__item">
-            <picture class="mobile-menu__img"
-              ><source
-                media="max-width: 767px"
-                srcset="
-                  ./images/products/prod2_sm@1x.png 1x,
-                  ./images/products/prod2_sm@2x.png 2x
-                " />
-              <img
-                src="./images/products/prod2_lg@1x.png"
-                alt="ice cream"
-                width="160"
-            /></picture>
-            <div class="mobile-menu__products mmp-second">
-              <p class="mobile-menu__title-products">ice coffee</p>
-            </div>
-          </li>
-          <li class="mobile-menu__item">
-            <picture class="mobile-menu__img"
-              ><source
-                media="max-width: 767px"
-                srcset="
-                  ./images/products/prod3_sm@1x.png 1x,
-                  ./images/products/prod3_sm@2x.png 2x
-                " />
-              <img
-                src="./images/products/prod3_lg@1x.png"
-                alt="ice cream"
-                width="160"
-            /></picture>
-            <div class="mobile-menu__products mmp-third">
-              <p class="mobile-menu__title-products">milkshake</p>
-            </div>
+            <p class="mobile-menu__title-products">milkshake</p>
           </li>
         </ul>
-      </div>
-
+      </div> -->
+      <ul class="buynow-modal__list list">
+        <li class="buynow__item buynow__item--ice-cream">
+          <h3 class="h3 buynow__title buynow__title--ice-cream">ice cream</h3>
+        </li>
+        <li class="buynow__item buynow__item--ice-coffee">
+          <h3 class="h3 buynow__title buynow__title--ice-coffee">ice coffee</h3>
+        </li>
+        <li class="buynow__item buynow__item--milkshakes">
+          <h3 class="h3 buynow__title buynow__title--ice-cream">milkshakes</h3>
+        </li>
+      </ul>
       <form class="modal-form">
         <div class="modal-form__field">
           <label for="name-form" class="modal-form__lable"></label>
@@ -193,8 +164,9 @@
             placeholder="Comment"
           ></textarea>
         </div>
-
-        <button class="agreement__btn" type="submit">Submit</button>
+        <!-- <button class="agreement__btn" type="submit">Submit</button> -->
+        <button class="submit__button--center" type="submit">Submit</button>
+        <!--  -->
       </form>
     </div>
   </div>
