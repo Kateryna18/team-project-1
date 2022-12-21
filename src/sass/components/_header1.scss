@@ -580,7 +580,7 @@ $milkshakes-color: #d6936d;
       border: 2px solid #efd478;
     }
     &--milkshakes {
-      border: 2px solid #d6936d;
+      border: 2px solid #efd478;
     }
     &--ice-cream:hover,
     &--ice-cream:focus {
@@ -678,6 +678,7 @@ $milkshakes-color: #d6936d;
   }
 } //buynow
 //спільне для псевдоелементів
+
 %buynow-before {
   content: '';
   display: block;
