@@ -567,7 +567,7 @@ $milkshakes-color: #d6936d;
     width: 132px;
     height: 135px;
     background: $second-color;
-    border: 2px solid $accent-color;
+
     border-radius: 10px;
     @media screen and (max-width: $max-mobile) {
       &:not(:last-child) {
@@ -575,13 +575,13 @@ $milkshakes-color: #d6936d;
       }
     }
     &--ice-cream {
-      border-color: $ice-cream-color;
+      border: 2px solid #96af8c;
     }
     &--ice-coffee {
-      border-color: $ice-coffee-color;
+      border: 2px solid #efd478;
     }
     &--milkshakes {
-      border-color: $milkshakes-color;
+      border: 2px solid #d6936d;
     }
     &--ice-cream:hover,
     &--ice-cream:focus {
