@@ -15,7 +15,6 @@
   padding: 0 16px 0 16px;
   // DESKTOP
   @media screen and (min-width: 1200px) {
-    height: 225px;
   }
 }
 .advantages--list {
@@ -38,6 +37,7 @@
   @media screen and (min-width: 1200px) {
     gap: 32px;
     flex-direction: row;
+    padding-bottom: 0px;
   }
 }
 .advantages--block {
