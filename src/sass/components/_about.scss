@@ -189,9 +189,11 @@
   &:hover,
   &:focus {
     background-color: $btn-hover;
+    transition: $bck-transition;
   }
   &:disabled {
     background-color: $btn-disable;
+    transition: $bck-transition;
   }
   @media screen and (min-width: 768px) {
     margin-top: 32px;
@@ -209,11 +211,13 @@
   margin-right: 7px;
   .about__btn:focus & {
     color: $second-color;
+    transition: $color-transition;
   }
 }
 .about__btn-svg {
   .about__btn:focus & {
     fill: $second-color;
+    transition: $fill-transition;
   }
 }
 .overlay {
@@ -272,18 +276,18 @@
   &:hover,
   &:focus {
     border-radius: 50%;
-    border: 1px solid #0a8817;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 10);
+    border: 1px solid $btn-hover;
+    transition: $border-transition;
   }
   &:hover {
     background-color: rgb(148, 206, 91);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $bck-transition;
   }
   &:focus {
     fill: $second-color;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $fill-transition;
     background-color: cornflowerblue;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $bck-transition;
   }
 }
 
