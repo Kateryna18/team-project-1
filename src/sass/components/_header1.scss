@@ -273,6 +273,8 @@ $milkshakes-color: #d6936d;
 }
 .modal-header {
   width: 280px;
+  overflow-y: scroll;
+    height: 500px;
   @media screen and (min-width: 768px) {
     width: 568;
   }
