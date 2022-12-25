@@ -249,6 +249,11 @@ $placeholder-color: rgba(117, 117, 117, 0.5);
     width: 280px;
     // height: 420px;
     border-radius: 24px;
+    transition: $transform 1s $cubic;
+    &:focus,
+    &:hover {
+      transform: scale(1.5);
+    }
     @media screen and (max-width: $max-mobile) {
       &:not(:last-child) {
         margin-bottom: 168px;
@@ -271,7 +276,7 @@ $placeholder-color: rgba(117, 117, 117, 0.5);
     &--milkshakes {
       background-color: $milkshakes-color;
     }
-    animation: item-jump 1s $cubic 2s 9;
+    // animation: item-jump 1s $cubic 2s 9;
   } //&__item
   %products-before {
     content: '';
@@ -418,11 +423,11 @@ $placeholder-color: rgba(117, 117, 117, 0.5);
       padding: 0 64px;
       height: 142px;
     }
-    transition: $transform 5s $cubic;
-    &:focus,
-    &:hover {
-      transform: scale(1.2);
-    }
+    // transition: $transform 1s $cubic;
+    // &:focus,
+    // &:hover {
+    //   transform: scale(1.2);
+    // }
   } //&__text
   &.button--arrow {
     border: none;
@@ -491,11 +496,11 @@ $placeholder-color: rgba(117, 117, 117, 0.5);
   }
   &.modal.active {
     overflow-y: scroll;
+    height: 100vh;
     opacity: 1;
     visibility: visible;
     padding: 0;
     width: 280px;
-    height: 100vh;
 
     @media screen and (min-width: $min-tablet) {
       width: 568px;
